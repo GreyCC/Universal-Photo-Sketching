@@ -26,6 +26,12 @@ BibTex will update after published
 
 # Implementation
 
+## Install python libraries
+
+```py
+pip install -r requirments.txt
+```
+
 ## Training
 
 Download MS COCO 2017 dataset by https://cocodataset.org/#download
