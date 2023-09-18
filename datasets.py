@@ -141,7 +141,7 @@ class DatasetFromFolder(data.Dataset):
             transforms.ToTensor()])
 
         img_dir = data_dir + '/train2017'
-        edge_dir = data_dir + '/edge'
+        edge_dir = data_dir + '/seg'
         self.input_filenames = sorted(glob(join(img_dir, '*.jpg')))
         self.edge_filenames = sorted(glob(join(edge_dir, '*.png'))) # .png for old edge and .jpg for HED
         self.ref_filenames = sorted(glob(join(ref_dir, '*/*.JPEG')))
